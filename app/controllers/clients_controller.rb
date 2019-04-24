@@ -12,7 +12,7 @@ class ClientsController < ApplicationController
   def show
     authenticate_user!
     @clients = Client.all
-
+    @client = Client.find(1)
   
   end
 end
